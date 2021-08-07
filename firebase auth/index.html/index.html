@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div class='box'>
+        <div class='box-form'>
+          <div class='box-login-tab'></div>
+          <div class='box-login-title'>
+            <div class='i i-login'></div>
+            <h2>LOGIN</h2>
+          </div>
+          <div class='box-login'>
+            <div class='fieldset-body' id='login_form'>
+              <button onclick="openLoginInfo();" class='b b-form i i-more' title='Info'></button>
+              <p class='field'>
+                <label for='user'>E-MAIL</label>
+                <input type='text' id='user' name='user' title='Username' />
+                <span id='valida' class='i i-warning'></span>
+              </p>
+              <p class='field'>
+                <label for='pass'>PASSWORD</label>
+                <input type='password' id='pass' name='pass' title='Password' />
+                <span id='valida' class='i i-close'></span>
+              </p>
+      
+              <label class='checkbox'>
+                <input type='checkbox' value='TRUE' title='Keep me Signed in' /> Keep me Signed in
+              </label>
+      
+              <input type='submit'onclick="poppy()" id='do_login' value='GET STARTED' title='Get Started' />
+            </div>
+          </div>
+        </div>
+        
+      <!-- The core Firebase JS SDK is always required and must be listed first -->
+ <script src="https://www.gstatic.com/firebasejs/8.9.0/firebase-app.js"></script>
+ <script src="https://www.gstatic.com/firebasejs/8.9.0/firebase-auth.js"></script>
+ <script src="https://www.gstatic.com/firebasejs/8.9.0/firebase-firestore.js"></script>
+
+ <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+ <script src="https://www.gstatic.com/firebasejs/8.9.0/firebase-analytics.js"></script>
+
+ <script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyAr5Y3cDgl8mMJJLzdC60-TG5UX3FgB6Mc",
+    authDomain: "go-go-e5378.firebaseapp.com",
+    projectId: "go-go-e5378",
+    
+    appId: "1:797900871623:web:ed5e8ff5aa39b0074fabe2",
+    
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  const db = firebase.firestore();
+ </script>
+      <script src="auth.js"></script>t
+      <script>src="index.js"</script>
+</body>
+</html>
